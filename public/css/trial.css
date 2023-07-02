@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  background-color: #9c835f;
+}
+
+.head > div {
+  padding: 20px;
+}
+
+.head > div > div > a {
+  color: #724c21;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.head > div > div > h2 {
+  color: #f9b23d;
+}
+
+.body > div {
+  margin-top: 30px;
+  padding: 0 20%;
+  margin-bottom: 60px;
+}
+
+.player-group h2,
+.player-group button,
+.computer-group h2,
+.computer-group button {
+  margin-bottom: 30px;
+}
+
+.body > div > div > div > button:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.computer-group button:disabled,
+.computer-group button[disabled] {
+  opacity: 30%;
+}
+
+.container-result {
+  height: 20%;
+}
+
+.container-result-win {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 182, 61);
+  color: white;
+  border-radius: 8px;
+}
+
+.container-result-draw {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(99, 99, 99);
+  color: white;
+  border-radius: 8px;
+}
+
+.container-result-lose {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(182, 0, 0);
+  color: white;
+  border-radius: 8px;
+}

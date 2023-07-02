@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  color: white;
+}
+
+/* h1,
+h2,
+h3 {
+  font-family: "Bebas Neue";
+} */
+
+.navbar {
+  padding: 36px 72px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.navbar-brand {
+  margin-right: 100px;
+  font-size: 24px;
+}
+
+.nav-item {
+  margin: 0 24px;
+}
+
+.nav-item > a {
+  cursor: pointer;
+}
+
+.home > div {
+  height: 1280px;
+  /* display: flex; */
+  background-image: url(../assets/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+}
+
+.home > div > div {
+  height: 100%;
+}
+
+.home > div > div > .col-md-12 {
+  margin-top: 300px;
+}
+
+.btn {
+  padding: 18px 56px;
+}
+
+/* .home > div > div > div > .col-md-12 {
+  margin-top: 600px;
+} */
+
+.home > div > div > .col-md-1 > a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.home > div > div > .col-md-1 > a > p {
+  margin-bottom: 0;
+}
+
+.about > div {
+  height: 1280px;
+  /* display: flex; */
+  background-image: url(../assets/the-games-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+.about > div > div {
+  height: 100%;
+}
+
+.about > div > div > div {
+  color: white;
+}
+
+.about > div > div > div > p {
+  font-size: 24px;
+  margin-bottom: 0;
+}
+
+.carousel-item {
+  padding: 0 10%;
+}
+
+.carousel-control-next-icon {
+  background-image: url("../assets/switch-right.svg");
+}
+.carousel-control-prev-icon {
+  background-image: url("../assets/switch-left.svg");
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-radius: 100%;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0);
+}
+.carousel-indicators .active {
+  background-color: white;
+}
+
+.features > div {
+  height: 1280px;
+  background-image: url(../assets/features.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+.features > div > div {
+  height: 100%;
+}
+
+.features .judul {
+  margin-bottom: 70px;
+  color: white;
+}
+
+.features .judul p {
+  margin-bottom: 0;
+  font-size: 24px;
+}
+
+.step {
+  padding: 10px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  background-color: cream;
+}
+
+.v-stepper {
+  position: relative;
+  /*   visibility: visible; */
+}
+
+/* regular step */
+.step .circle {
+  border: 2px solid white;
+  border-radius: 100%;
+  width: 16px; /* +6 for border */
+  height: 16px;
+  display: inline-block;
+}
+
+.step.completed .line {
+  top: 19px;
+  left: 7px;
+  /*   height: 120px; */
+  height: 100%;
+
+  position: absolute;
+  border-left: 2px solid white;
+}
+
+.step.completed .circle {
+  visibility: visible;
+  background-color: white;
+  border-color: white;
+}
+
+.step.active .circle {
+  visibility: visible;
+}
+
+.step:last-child .line {
+  border-left: 3px solid white;
+  z-index: -1; /* behind the circle to completely hide */
+}
+
+.content {
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.content h4 {
+  color: #ffb548;
+}
+
+.content p {
+  color: white;
+}
+
+.spec > div {
+  height: 1280px;
+  background-image: url(../assets/requirements.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.spec > div > div.row {
+  height: 100%;
+}
+
+.spec .container-fluid {
+  background-color: transparent;
+}
+
+.spec .sys-req div {
+  padding: 14px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.spec .judul {
+  font-size: 24px;
+  color: #ffb548;
+}
+
+.top-score > div {
+  height: 1280px;
+  background-image: url(../assets/top-score-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.top-score > div > div {
+  height: 100%;
+  padding: 0 5%;
+}
+
+.top-comment {
+  padding: 0 40px;
+}
+
+.comment {
+  height: 230px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.profile {
+  height: 40%;
+}
+
+.profile-sect {
+  height: 100%;
+}
+
+.profile .col-8 .row {
+  height: 80%;
+}
+
+.person-detail .judul {
+  color: #ffb548;
+  font-size: 1.8em;
+}
+
+.person-detail .job {
+  color: rgb(77, 77, 77);
+  font-size: 1.5em;
+}
+
+.person-detail p {
+  margin: 0;
+}
+
+.text-comment {
+  height: 35%;
+}
+
+.date-comment {
+  height: 25%;
+  color: rgb(77, 77, 77);
+}
+
+.subs > div {
+  height: 1280px;
+  background-image: url(../assets/newsletter.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  padding: 5% 10% 2% 10%;
+}
+
+.news {
+  height: 70%;
+}
+
+.news .form-floating input {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffb548;
+}
+
+.news .form-floating label {
+  color: rgb(100, 100, 100);
+  background-color: transparent;
+}
+
+.news .form-floating label:focus {
+  color: rgb(100, 100, 100);
+  background-color: transparent;
+}
+
+.footer {
+  height: 30%;
+}
+
+.footer div a {
+  text-align: center;
+  margin: 0 1.2em;
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+
+.footer hr {
+  height: 1px;
+}
+
+.year {
+  color: rgb(100, 100, 100);
+}
+
+.privacy a {
+  font-weight: bold;
+}
