@@ -60,7 +60,7 @@ app.get("/greet", (req, res) => {
   res.render("greet", { name });
 });
 
-//set the server for debugging
-app.listen(3000, function () {
+//set the server for debugging at localhost:5000
+app.listen(5000, function () {
   console.log("Server running on port 3000");
 });
