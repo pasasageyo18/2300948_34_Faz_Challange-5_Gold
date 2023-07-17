@@ -2,9 +2,13 @@
 const bodyParser = require("body-parser");
 const express = require("express");
 const app = express();
+const router = require("./middleware/router");
 
 //add user variable with email and password
-const user = { email: "admin", password: "admin" };
+const user = require("./account.json");
+
+//use router
+app.use(router);
 
 //body parser for content type
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -44,20 +48,13 @@ app.post("/login", (req, res) => {
 
   //if else condition to check wether the email and password is right or false
   if (username === user.email && password === user.password) {
-    //if the email and password right it will redirect to greet page
+    //if the email and password right it will redirect to greet page at the router module
     res.redirect("/greet");
 
     //if one of them are wrong the express will send a text respond to body page
   } else {
     res.send("email atau password salah.");
   }
-});
-
-//set router for greet.ejs
-app.get("/greet", (req, res) => {
-  //render the page and bring the name variable that contain email user
-  const name = user.email;
-  res.render("greet", { name });
 });
 
 //set the server for debugging at localhost:5000
